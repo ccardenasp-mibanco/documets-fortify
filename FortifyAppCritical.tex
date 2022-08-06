@@ -1,0 +1,625 @@
+\documentclass{article}
+
+\usepackage[utf 8]{inputenc }
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+\title{Fallas Criticas de la Aplicación Móvil}  
+\date{ }
+
+\begin{document}
+
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Password Management: Hardcoded Password}
+    \subsection{Bad Practices}
+        \subsubsection{web/src/Config.tsx}
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Prioridad:}kh
+
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Gravedad:}sdsd
+
+            \endgroup
+                
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Descripcicón:}
+           
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Identificación:}
+            
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Resultado esperado:}
+          
+            \endgroup
+    
+        \subsubsection{test/config.js}
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Prioridad:}kh
+
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Gravedad:}sdsd
+
+            \endgroup
+                
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Descripcicón:}
+        
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Identificación:}
+            
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Resultado esperado:}
+        
+            \endgroup
+        \subsubsection{scripts/src/cmd/SignUp.ts}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+        \subsubsection{scripts/src/cmd/Scanner.ts}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+
+    \subsection{Suspicious}
+        \subsubsection{test/config.js}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+        \subsubsection{scripts/src/cmd/ForgotPassword.ts}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+
+
+\section{Key Management: Hardcoded Encryption Key}
+    \subsection{Bad Practices}
+        \subsubsection{firebase/functions/src/config.ts}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+        \subsubsection{firebase/functions/src/config-qa.ts}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+    \subsection{Suspicious}
+        \subsubsection{src/scenes/app/queries/DPFScreen.tsx}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+   
+
+\section{Privacy Violation}
+    \subsection{Suspicious}
+        \subsubsection{scripts/src/resources/log/Log.ts}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+   
+
+\section{Privacy Violation: iOS Property List}
+    \subsection{Bad Practices}
+        \subsubsection{ios/MibancoMovil/Firebase/Release/GoogleService-Info.plist}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+        \subsubsection{ios/MibancoMovil/Firebase/QA/GoogleService-Info.plist}
+        \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Prioridad:}kh
+
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Gravedad:}sdsd
+
+            \endgroup
+                
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Descripcicón:}
+        
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Identificación:}
+            
+            \endgroup
+
+            \begingroup
+            \noindent
+            \leftskip 35pt 
+            \rightskip 0pt 
+            \vspace{10pt}
+            \textbf{Resultado esperado:}
+        
+            \endgroup
+        \subsection{Suspicious}
+        \subsubsection{ios/MibancoMovil/Firebase/Dev/GoogleService-Info.plist}
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Prioridad:}kh
+
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Gravedad:}sdsd
+
+        \endgroup
+            
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Descripcicón:}
+    
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Identificación:}
+        
+        \endgroup
+
+        \begingroup
+        \noindent
+        \leftskip 35pt 
+        \rightskip 0pt 
+        \vspace{10pt}
+        \textbf{Resultado esperado:}
+    
+        \endgroup
+
+
+\end{document}
